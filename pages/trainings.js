@@ -21,12 +21,10 @@ const malta = {
 };
 
 
-
-export default function Trainings() {
-
+export default function Trainings(props) {
 
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: process.env.MAP_KEY,
+        googleMapsApiKey: process.env.NEXT_PUBLIC_MAP,
         libraries,
       });
     
